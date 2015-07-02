@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title class="title"> Shikhar Vats </title>
+		<link rel="stylesheet" type="text/css" href="contact_style.css">
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+    	<script>
+      	function initialize() {
+       	 var mapCanvas = document.getElementById('map-canvas');
+       	 var mapOptions = {
+       	   center: new google.maps.LatLng(42.035390, -93.641052),
+       	   zoom: 12,
+       	   mapTypeId: google.maps.MapTypeId.ROADMAP
+       	 }
+       	 var map = new google.maps.Map(mapCanvas, mapOptions)
+      	 var marker = new google.maps.Marker({position : new google.maps.LatLng(42.035390, -93.641052),
+      	 	map: map,
+      	 	title: "value" });
+      	}
+      	google.maps.event.addDomListener(window, 'load', initialize);
+    	</script>
+    	<!--<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+			<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/shikhar-vats/46/76b/653" data-format="click"></script>!-->
+	</head>
+
+<body>
+	<header>
+		<center> <h1 class="heading"> Shikhar Vats </h1> </center>
+	
+		<ul class="navigation">	
+  			<li><a href="portfolio.html">Home</a></li>
+  			<li><a href="about.html">About</a></li>
+  			<li><a href="work.html">Projects</a></li>
+  			<li><a href="shikharvatsresume.pdf">Resume</a></li>
+  			<li><a href="#">Contact</a></li>
+            <li><a href="portfolio.pdf">Portfolio</a></li>
+            <li><a href="ethics.pdf">Ethics Essay</a></li>
+		</ul>
+	</header>
+
+	<!--source- foxyform.com!-->
+	<!-- Do not change the code! -->
+	<div id="bod_container">
+		
+		<div><a href="https://www.linkedin.com/pub/shikhar-vats/46/76b/653">
+		 <img src="images/InBug-60px-R.png"  
+						style="padding-left: 48%;
+				 	           padding-top: 10px;
+				   			   padding-bottom: 10px;"></a> </div>
+
+		<div id="map-canvas"></div>
+		
+		<div class="text_msg"> <h3>	Drop me a message!	</h3></div>
+		
+		<div class="form"> 
+		<a id="foxyform_embed_link_635682" href="http://www.foxyform.com/">foxyform</a>
+		<script type="text/javascript">
+		(function(d, t){
+   		var g = d.createElement(t),
+   	    s = d.getElementsByTagName(t)[0];
+   		g.src = "http://www.foxyform.com/js.php?id=635682&sec_hash=2bf74298eae&width=350px";
+   		s.parentNode.insertBefore(g, s);
+		}(document, "script"));
+		</script>
+		<!-- Do not change the code! -->
+		</div>
+		
+	</div>
+
+</body>
+</html>

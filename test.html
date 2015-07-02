@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>airportwriter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="https://raw.github.com/gist/1056686/95e5673006c220ece43cdfd879f3e87662f84b70/airportwriter.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono&v1' rel='stylesheet' type='text/css'></link>
+    <style type="text/css">
+      body {
+        color: #fff;
+        background-color: #333;
+        font-family: 'Droid Sans Mono', arial, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</h1>
+    <h2>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</h2>
+    <h3>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</h3>
+    <h4>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</h4>
+    <p id="p1">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT<br> 
+    LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS<br> 
+    NISI UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE VELIT<br>
+    ESSE CILLUM DOLORE EU FUGIAT NULLA PARIATUR. EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT,<br>
+    SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT ANIM ID EST LABORUM. 0123456789</p>
+    <p id="p2">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT<br> 
+    LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS<br> 
+    NISI UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE VELIT<br>
+    ESSE CILLUM DOLORE EU FUGIAT NULLA PARIATUR. EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT,<br>
+    SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT ANIM ID EST LABORUM. 0123456789</p>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('h1').airportwriter({speed:50,num:0,complete:function(){/*complete h2*/}});
+        $('h2, h4').airportwriter({speed:70,complete:function(){/*complete h1/h4 */},chars:'QWERTZUIOPASDFGHJKLYXCVBNM'});
+        $('h3').airportwriter({speed:100,num:2,complete:function(){/*complete h3*/},chars:'QWERTZUIOPASDFGHJKLYXCVBNM#+-0123456789'});
+		$('#p1').airportwriter({speed:30, chars:'_'});
+		$('#p2').airportwriter({speed:30, num:3});
+      })
+    </script>
+  </body> 
+</html>
